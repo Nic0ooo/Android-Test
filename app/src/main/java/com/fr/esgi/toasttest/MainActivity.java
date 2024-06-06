@@ -7,13 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final String EXTRA_MESSAGE =
-            "com.example.android.twoactivities.extra.MESSAGE";
+            "com.fr.esgi.toasttest.extra.MESSAGE";
     private EditText mMessageEditText;
     public static final int TEXT_REQUEST = 1;
     private TextView mReplyHeadTextView;
@@ -31,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mMessageEditText = findViewById(R.id.editText_main);
-        mReplyHeadTextView = findViewById(R.id.text_header_reply);
-        mReplyTextView = findViewById(R.id.text_message_reply);
+
+        mMessageEditText = (EditText) findViewById(R.id.editText_main);
+        mReplyHeadTextView = (TextView) findViewById(R.id.text_header_reply);
+        mReplyTextView = (TextView) findViewById(R.id.text_message_reply);
     }
 
     public void launchSecondActivity(View view) {
