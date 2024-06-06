@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToastTest</string>
+    <string name="button_main">Send</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="text_header">Message Received</string>
+    <string name="editText_main">Entrez votre message</string>
+    <string name="button_second">Répondre</string>
+    <string name="editText_second">Entrez votre réponse</string>
+    <string name="text_header_reply">Réponse reçue</string>
+</resources>
